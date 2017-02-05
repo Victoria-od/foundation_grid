@@ -28,6 +28,8 @@
   .navigation input {
     border: none;
     outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
     box-shadow: none;
     font-family: Arial;
     color: #a0a0a0;
@@ -36,13 +38,19 @@
   .navigation input:hover {
     border: none;
     outline: none;
-    outline-offset: none;
-    box-shadow: none; }
+    outline-offset: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; 
+  }
   .navigation input.active {
     border: none;
-    outline-offset: none;
+    outline-offset: 0;
     outline: none;
-    box-shadow: none; }
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; 
+  }
   .navigation button {
     border: none;
     background: none; }
@@ -71,7 +79,7 @@
   height: 0;
   width: 0;
   position: absolute;
-  pointer-events: none; }
+ }
 
 .arrow_box_active:after {
   border-color: rgba(255, 255, 255, 0);
@@ -95,7 +103,6 @@
       font-size: 65.45px;
       font-weight: 300;
       line-height: 65.45px;
-      letter-spacing: 1.04;
       text-shadow: 1px 2px 0px #257a9f; }
       .section-choice .section-choice-title h3 a {
         text-decoration: none;
